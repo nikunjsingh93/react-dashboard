@@ -13,11 +13,6 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="space-x-6 ml-auto">
           <span className="text-white hover:text-gray-300">
-            <Link to="/" className="nav-link">
-              Analysis
-            </Link>
-          </span>
-          <span className="text-white hover:text-gray-300">
             <Link to="/about" className="nav-link">
               About
             </Link>
