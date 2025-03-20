@@ -7,14 +7,14 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         {/* Heading */}
         <h1 className="text-white text-2xl font-semibold pl-10 mr-auto">
-          <Link to="/">Dashboard</Link>
+          <Link to="/">Nikunj Singh</Link>
         </h1>
 
         {/* Navigation Links */}
         <div className="space-x-6 ml-auto">
           <span className="text-white hover:text-gray-300">
             <Link to="/about" className="nav-link">
-              About
+              Settings
             </Link>
           </span>
         </div>

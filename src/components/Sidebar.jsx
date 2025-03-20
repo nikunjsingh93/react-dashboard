@@ -40,7 +40,7 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
-              Home
+              Dashboard
             </div>
           </div>
         </div>
