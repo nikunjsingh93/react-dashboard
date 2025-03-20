@@ -33,7 +33,17 @@ function Sidebar() {
             open ? "w-72 p-5" : "w-0 p-0"
           }`}
           style={{ backgroundColor: "#171710" }}
-        />
+        >
+          <div className="pt-10 flex gap-x-4 items-center">
+            <div
+              className={`flex text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Home
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
