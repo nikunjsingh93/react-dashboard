@@ -1,44 +1,39 @@
 import { useState, useEffect } from "react";
-import { MessageSquareText, Trash, PanelsTopLeft } from "lucide-react";
+import { PanelsTopLeft } from "lucide-react";
 
 function Sidebar() {
-  // Function to determine if the window width is at least the 'md' breakpoint (768px)
-  const isMediumScreen = () => window.innerWidth >= 768;
+  // State to manage sidebar visibility
+  const [open, setOpen] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
 
-  // Initialize 'open' state based on the current window width
-  const [open, setOpen] = useState(isMediumScreen());
-
-  // Effect to handle window resize events
   useEffect(() => {
-    const handleResize = () => {
-      if (!isMediumScreen()) {
-        setOpen(false); // Close the drawer on small screens
-      }
-    };
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
 
-    window.addEventListener("resize", handleResize);
+    const handleChange = (e) => setOpen(e.matches);
 
-    // Cleanup the event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
     <>
+      {/* Toggle Button */}
       <button
-        className={`absolute z-50 cursor-pointer m-5
-           ${!open}`}
-        onClick={() => setOpen(!open)}
+        className="absolute z-50 cursor-pointer m-5"
+        onClick={() => setOpen((prev) => !prev)}
       >
         <PanelsTopLeft size={25} color="#ffffff" />
       </button>
 
+      {/* Sidebar */}
       <div className="relative">
         <div
+          className={`h-full duration-300 absolute md:relative z-40 overflow-hidden ${
+            open ? "w-72 p-5" : "w-0 p-0"
+          }`}
           style={{ backgroundColor: "#171710" }}
-          className={` ${
-            open ? "w-72 p-5" : "translate-x-0 w-0 p-0"
-          } h-full pt-8 duration-300 absolute md:relative z-40`}
-        ></div>
+        />
       </div>
     </>
   );
