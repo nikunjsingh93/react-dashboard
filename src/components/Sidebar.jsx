@@ -34,13 +34,62 @@ function Sidebar() {
           }`}
           style={{ backgroundColor: "#171710" }}
         >
-          <div className="pt-10 flex gap-x-4 items-center">
+          <div className="pt-15 flex-col items-center">
             <div
-              className={`flex text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+              className={`flex text-white origin-left font-small text-sm duration-200 pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Favorites
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-3 ${
                 !open && "scale-0"
               }`}
             >
               Dashboard
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Analysis
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Reports
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Customers
+            </div>
+            <div
+              className={`flex text-white origin-left font-small text-sm duration-200 pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Money
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-3 ${
+                !open && "scale-0"
+              }`}
+            >
+              Savings
+            </div>
+            <div
+              className={`flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-5 ${
+                !open && "scale-0"
+              }`}
+            >
+              Revenue
             </div>
           </div>
         </div>
