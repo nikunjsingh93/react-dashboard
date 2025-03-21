@@ -1,4 +1,11 @@
-import { PackageOpen } from "lucide-react";
+import {
+  PackageOpen,
+  Handshake,
+  CircleDollarSign,
+  Landmark,
+  PackageX,
+  Eye,
+} from "lucide-react";
 
 function Card() {
   const cardList = [
@@ -12,7 +19,7 @@ function Card() {
     {
       title: "Monthly Deals",
       value: "2,235",
-      logo: <PackageOpen size={20} />,
+      logo: <Handshake size={20} />,
       rowspan: "row-span-2",
       minh: "min-h-[300px]",
     },
@@ -33,28 +40,28 @@ function Card() {
     {
       title: "Total Revenue",
       value: "$52,128",
-      logo: <PackageOpen size={20} />,
+      logo: <CircleDollarSign size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
     },
     {
       title: "Conversion Rate",
       value: "56%",
-      logo: <PackageOpen size={20} />,
+      logo: <Landmark size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
     },
     {
       title: "Bounce Rate",
       value: "23%",
-      logo: <PackageOpen size={20} />,
+      logo: <PackageX size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
     },
     {
       title: "Views",
       value: "101,321",
-      logo: <PackageOpen size={20} />,
+      logo: <Eye size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
     },
