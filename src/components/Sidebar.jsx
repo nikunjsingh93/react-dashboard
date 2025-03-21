@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-import { PanelsTopLeft } from "lucide-react";
+import {
+  PanelsTopLeft,
+  LayoutDashboard,
+  NotepadText,
+  ChartNoAxesCombined,
+  UsersRound,
+  HandCoins,
+  CircleDollarSign,
+} from "lucide-react";
 
 function Sidebar() {
   // State to manage sidebar visibility
@@ -47,6 +55,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <LayoutDashboard />
+              </div>{" "}
               Dashboard
             </div>
             <div
@@ -54,6 +65,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <ChartNoAxesCombined />
+              </div>
               Analysis
             </div>
             <div
@@ -61,6 +75,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <NotepadText />
+              </div>{" "}
               Reports
             </div>
             <div
@@ -68,6 +85,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <UsersRound />
+              </div>{" "}
               Customers
             </div>
             <div
@@ -82,6 +102,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <HandCoins />
+              </div>{" "}
               Savings
             </div>
             <div
@@ -89,6 +112,9 @@ function Sidebar() {
                 !open && "scale-0"
               }`}
             >
+              <div className="pt-0.5 pr-2">
+                <CircleDollarSign />
+              </div>{" "}
               Revenue
             </div>
           </div>
