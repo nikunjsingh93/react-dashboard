@@ -1,4 +1,5 @@
 import { PackageOpen } from "lucide-react";
+import Card from "./Card";
 
 function Grid() {
   return (
