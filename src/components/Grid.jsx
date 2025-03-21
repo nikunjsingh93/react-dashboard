@@ -9,6 +9,7 @@ function Grid() {
       <div className="bg-gray-800 rounded-lg min-h-[200px] "></div>
       <div className="bg-gray-400 rounded-lg min-h-[200px] "></div>
       <div className="bg-gray-500 rounded-lg min-h-[200px] "></div>
+      <div className="bg-gray-400 rounded-lg min-h-[200px] "></div>
     </div>
     </div>
   );
