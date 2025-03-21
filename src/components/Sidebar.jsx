@@ -36,7 +36,7 @@ function Sidebar() {
         >
           <div className="pt-15 flex-col items-center">
             <div
-              className={`flex text-white origin-left font-small text-sm duration-200 pt-5 ${
+              className={`flex text-[#bfbdbd] origin-left font-small text-sm duration-200 pt-5 ${
                 !open && "scale-0"
               }`}
             >
@@ -71,7 +71,7 @@ function Sidebar() {
               Customers
             </div>
             <div
-              className={`flex text-white origin-left font-small text-sm duration-200 pt-5 ${
+              className={`flex text-[#bfbdbd] origin-left font-small text-sm duration-200 pt-5 ${
                 !open && "scale-0"
               }`}
             >
