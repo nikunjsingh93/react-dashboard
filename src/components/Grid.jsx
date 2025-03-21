@@ -10,7 +10,7 @@ function Grid() {
         142,293
         </div>
       </div>
-      <div className=" border border-[rgba(255,255,255,0.3)] rounded-lg min-h-[150px] row-span-2">
+      <div className=" border border-[rgba(255,255,255,0.3)] rounded-lg min-h-[300px] row-span-2">
         <div className="pl-10 pt-10 text-white text-xl font-normal">
         Monthly Deals
         </div>
