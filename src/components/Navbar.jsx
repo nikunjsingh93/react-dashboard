@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Settings } from "lucide-react";
+import { Settings, UserPen } from "lucide-react";
+
 const Navbar = () => {
   return (
     <nav
@@ -9,9 +10,14 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         {/* Heading */}
-        <h1 className="text-white text-2xl font-semibold pl-10 mr-auto">
-          <Link to="/">Nikunj Singh</Link>
-        </h1>
+        <div className="flex">
+          <h1 className="text-white text-2xl font-semibold pl-10 mr-auto">
+            <Link to="/">Nikunj Singh</Link>
+          </h1>
+          <div className="text-white pl-2.5 pt-1.5">
+            <UserPen />
+          </div>
+        </div>
 
         {/* Navigation Links */}
         <div className="ml-auto">
