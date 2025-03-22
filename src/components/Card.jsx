@@ -47,7 +47,7 @@ function Card() {
       logo: <PackageOpen size={20} />,
       rowspan: "row-span-2",
       minh: "min-h-[300px]",
-      subtitle: "Decrease by 5%",
+      subtitle: "Decreased by 5%",
       sublogo: <CircleArrowDown size={17} color="#d22d2d" />,
       chart: <PieChart></PieChart>,
     },
@@ -57,7 +57,7 @@ function Card() {
       logo: <CircleDollarSign size={20} />,
       rowspan: "",
       minh: "min-h-[160px]",
-      subtitle: "Increase by 4%",
+      subtitle: "Increased by 4%",
       sublogo: <CircleArrowUp size={17} color="#2ac62d" />,
     },
     {
