@@ -1,12 +1,19 @@
-# React + Vite
+# React dashboard made with react + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Fully Responsive template ready to kickstart any project
 
-Currently, two official plugins are available:
+ # Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot 2025-03-21 222029](https://github.com/user-attachments/assets/a22948a6-b02f-4940-91d2-21281795006e)
 
-## Expanding the ESLint configuration
+![Screenshot 2025-03-21 222043](https://github.com/user-attachments/assets/982d9cee-4d58-486b-9b56-3d0208c54432)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Screenshot 2025-03-21 222124](https://github.com/user-attachments/assets/79ff6f51-2abb-4f17-a2db-cbdd83702187)
+
+![Screenshot 2025-03-21 222143](https://github.com/user-attachments/assets/6f2ba08b-069d-45c5-aadb-4803d5df145b)
+
+![Screenshot 2025-03-21 222200](https://github.com/user-attachments/assets/6763ac89-7af6-4e20-bb94-82314aac70e0)
+
+![Screenshot 2025-03-21 222329](https://github.com/user-attachments/assets/0c951dc1-6dac-49ee-a002-0f922057cf08)
+
+![Screenshot 2025-03-21 222655](https://github.com/user-attachments/assets/0b1936ef-defc-4042-8e69-37aceef6d4ef)
