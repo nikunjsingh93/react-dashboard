@@ -7,6 +7,7 @@ import {
   UsersRound,
   HandCoins,
   CircleDollarSign,
+  LogOut,
 } from "lucide-react";
 
 function Sidebar() {
@@ -38,11 +39,11 @@ function Sidebar() {
       <div className="relative">
         <div
           className={`h-full duration-300 absolute md:relative z-40 overflow-hidden ${
-            open ? "w-72 p-5" : "w-0 p-0"
+            open ? "w-60 p-5" : "w-0 p-0"
           }`}
           style={{ backgroundColor: "#171710" }}
         >
-          <div className="pt-15 flex-col items-center">
+          <div className="pt-15 flex flex-col h-full">
             <div
               className={`flex text-[#bfbdbd] origin-left font-small text-sm duration-200 pt-5 ${
                 !open && "scale-0"
@@ -116,6 +117,16 @@ function Sidebar() {
                 <CircleDollarSign />
               </div>{" "}
               Revenue
+            </div>
+            <div
+              className={`mt-auto flex pl-5 text-white origin-left font-small text-lg duration-200 cursor-pointer pt-3 ${
+                !open && "scale-0"
+              }`}
+            >
+              <div className="pt-0.5 pr-2">
+              <LogOut />
+              </div>{" "}
+              Log out
             </div>
           </div>
         </div>
