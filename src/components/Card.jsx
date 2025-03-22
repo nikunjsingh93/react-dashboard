@@ -17,9 +17,8 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
-
     },
     {
       title: "Monthly Deals",
@@ -28,7 +27,7 @@ function Card() {
       rowspan: "row-span-2",
       minh: "min-h-[300px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -38,7 +37,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -48,7 +47,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -58,7 +57,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -68,7 +67,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -78,7 +77,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
     {
@@ -88,7 +87,7 @@ function Card() {
       rowspan: "",
       minh: "min-h-[150px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp  size={17}  />,
+      sublogo: <CircleArrowUp size={17} />,
       sublogo_color: "#2ac62d",
     },
   ];
@@ -111,12 +110,11 @@ function Card() {
             {card.value}
           </div>
           <div className="flex">
-          <div className="pl-10 text-white text-sm ">
-            {card.subtitle}
+            <div className="pl-10 text-white text-sm ">{card.subtitle}</div>
+            <div className={`pl-2 pt-0.5 text-[${card.sublogo_color}]`}>
+              {card.sublogo}
+            </div>
           </div>
-            <div className={`pl-2 pt-0.5 text-[${card.sublogo_color}]`}>{card.sublogo}</div>
-          </div>
-          
         </div>
       ))}
     </>
