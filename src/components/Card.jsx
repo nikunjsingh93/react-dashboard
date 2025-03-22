@@ -6,6 +6,7 @@ import {
   PackageX,
   Eye,
   CircleArrowUp,
+  CircleArrowDown,
 } from "lucide-react";
 
 function Card() {
@@ -16,9 +17,8 @@ function Card() {
       logo: <PackageOpen size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Increased by 12%",
+      sublogo: <CircleArrowUp size={17} color="#2ac62d"/>,
     },
     {
       title: "Monthly Deals",
@@ -27,8 +27,7 @@ function Card() {
       rowspan: "row-span-2",
       minh: "min-h-[300px]",
       subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      sublogo: <CircleArrowUp size={17} color="#2ac62d"/>,
     },
     {
       title: "New Orders",
@@ -36,9 +35,8 @@ function Card() {
       logo: <PackageOpen size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Decreased by 7%",
+      sublogo: <CircleArrowDown size={17} color="#d22d2d"/>,
     },
     {
       title: "Total Orders",
@@ -46,9 +44,8 @@ function Card() {
       logo: <PackageOpen size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Decrease by 5%",
+      sublogo: <CircleArrowDown size={17} color="#d22d2d"/>,
     },
     {
       title: "Total Revenue",
@@ -56,9 +53,9 @@ function Card() {
       logo: <CircleDollarSign size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Increase by 4%",
+      sublogo: <CircleArrowUp size={17} color="#2ac62d"/>,
+     
     },
     {
       title: "Conversion Rate",
@@ -66,9 +63,9 @@ function Card() {
       logo: <Landmark size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Increased by 3%",
+      sublogo: <CircleArrowDown size={17} color="#d22d2d"/>,
+     
     },
     {
       title: "Bounce Rate",
@@ -76,9 +73,9 @@ function Card() {
       logo: <PackageX size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Increased by 2%",
+      sublogo: <CircleArrowUp size={17} color="#d22d2d"/>,
+      
     },
     {
       title: "Views",
@@ -86,9 +83,9 @@ function Card() {
       logo: <Eye size={20} />,
       rowspan: "",
       minh: "min-h-[150px]",
-      subtitle: "Increased by 15%",
-      sublogo: <CircleArrowUp size={17} />,
-      sublogo_color: "#2ac62d",
+      subtitle: "Increased by 8%",
+      sublogo: <CircleArrowUp size={17} color="#2ac62d"/>,
+     
     },
   ];
 
@@ -111,7 +108,7 @@ function Card() {
           </div>
           <div className="flex">
             <div className="pl-10 text-white text-sm ">{card.subtitle}</div>
-            <div className={`pl-2 pt-0.5 text-[${card.sublogo_color}]`}>
+            <div className="pl-2 pt-0.5">
               {card.sublogo}
             </div>
           </div>
