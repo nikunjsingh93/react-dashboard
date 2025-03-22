@@ -1,4 +1,4 @@
-# React dashboard made with react + Tailwind CSS
+# React dashboard made with React + Tailwind CSS
 
  Fully Responsive template ready to kickstart any project
 
